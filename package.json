@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@angular/router": "^15.1.1",
     "guid-typescript": "^1.0.9"
   },
   "devDependencies": {

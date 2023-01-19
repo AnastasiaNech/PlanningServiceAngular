@@ -1,0 +1,18 @@
+<h1 class="text-center mb-2 text-lg">Список пользователей</h1>
+<table class='table table-striped'>
+  <thead>
+    <tr>
+      <th>Ф.И.О</th>
+      <th>Дата рождения</th>
+      <th>Почта</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let user of httpService.users">
+    <tr>
+      <td>{{ user.name }}</td>
+      <td>{{ user.birthDate }}</td>
+      <td>{{ user.email }}</td>
+    </tr>
+  </tbody>
+</table>
+<ng-content></ng-content>
